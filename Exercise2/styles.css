@@ -1,0 +1,31 @@
+.silly-list li:first-child {
+  color: red;
+}
+
+.silly-list li:not(:last-child) {
+  padding: 13px;
+}
+
+.silly-list li:nth-child(even) {
+  background-color: blue;
+}
+
+.silly-list li:nth-child(3n) {
+  list-style-type: square;
+}
+
+.silly-list li:nth-child(5) {
+  color: orange;
+}
+
+.silly-list li:nth-child(6):hover + li {
+  color: rgb(72, 5, 92);
+  background-color: rgb(215, 172, 255);
+}
+
+.silly-list:has(li:nth-last-child(n + 8)) {
+  color: white;
+  background: green;
+  padding: 10px;
+  border: 1px solid white;
+}
