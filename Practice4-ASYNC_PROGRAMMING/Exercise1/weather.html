@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="weather" class="weather">
+        <h1 class="weather__title">Weather Information</h1>
+
+        <div class="weather__dropdown">
+          <label class="weather__label">
+            Select a city:
+            <select id="city" class="weather__select">
+              <option value="La Paz">La Paz</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Cochabamba">Cochabamba</option>
+              <option value="Sucre">Sucre</option>
+              <option value="Potosi">Potosí</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="weather__info"></div>
+      </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
