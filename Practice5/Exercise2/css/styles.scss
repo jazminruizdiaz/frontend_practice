@@ -1,0 +1,38 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter {
+  text-align: center;
+  width: 300px;
+  padding: 2rem;
+  border: 3px solid lightgray;
+  border-radius: 20px;
+  background-color: rgb(240, 236, 236);
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+  &__display {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: cornflowerblue;
+    margin: 2rem 0;
+  }
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: royalblue;
+  color: white;
+}

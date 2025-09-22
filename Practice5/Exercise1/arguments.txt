@@ -1,0 +1,14 @@
+En el original, se accedia a variables y funciones antes de su declaracion,
+aprovechando el comportamiento de hoisting de var y las declaraciones de funcion tradicionales.
+Con la refactorizacion, este comportamiendo se corrigio al 
+reemplazar var por let/const y convertir las funciones en expresiones 
+arrow asignadas a constantes.
+Entonces, los comportamientos que se eliminan son:
+    - Las variables var se elevaban y devolvian undefined antes de su asignacion
+    - Las declaraciones de funcion se elevaban completamente, permitiendo su uso antes de 
+    la declaracion
+    - Con let/const y expresiones de funcion, el TDZ previene el uso anticipado
+El codigo es mas seguro y predecible, ya que cada valor y funcion
+solo existe en el momento en que realmente ha sido declarado y asignado.
+Si una variable se usa antes de la declaracion, el codigo falla inmediatamente
+con un error claro en lugar de obtener resultados inesperados
