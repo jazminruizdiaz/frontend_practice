@@ -7,13 +7,13 @@ const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const inject = require("gulp-inject");
 const browserSync = require("browser-sync").create();
-const del = require("del");
 
 function css() {
   return src("css/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(
       autoprefixer({
+        overrideBrowserslist: ["last 2 versions"],
         cascade: false,
       })
     )
