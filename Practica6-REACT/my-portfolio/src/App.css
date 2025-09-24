@@ -1,0 +1,180 @@
+/* Base */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-color: #af9fb39a;
+  color: #333333;
+}
+
+/* App */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background-color: #fffeffe1;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.header__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header__name {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header__tagline {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header__portfolio-type {
+  color: #564160;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*width: 100%;
+  padding: 0 1rem;*/
+}
+
+/* Abput */
+.about {
+  background-color: #fffeffe1;
+  margin: 2rem 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about__container {
+  padding: 3rem;
+}
+
+.about__title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Project Section */
+.projects {
+  margin: 2rem 0;
+}
+
+.projects__container {
+  background-color: #fffeffe1;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.projects__title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.projects__empty {
+  text-align: center;
+  font-size: 2rem;
+  color: #564160;
+  padding: 1rem;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #f8ebff;
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid #564160;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  background-color: #faf4fd;
+}
+
+.project-card__description {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.project-card__link {
+  text-decoration: none;
+}
+
+.project-card__link:hover {
+  text-decoration: underline;
+}
+
+/* Hobbies Section */
+.hobbies {
+  margin: 2rem 0;
+}
+
+.hobbies__container {
+  background-color: #fffeffe1;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.hobbies__title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hobbies__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.hobbies__item {
+  background-color: #f8ebff;
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid #564160;
+}
+
+.hobbies__item:hover {
+  background-color: #faf4fd;
+}
+
+.hobbies__name {
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer__message {
+  color: #564160;
+  margin-bottom: 0.5rem;
+}
