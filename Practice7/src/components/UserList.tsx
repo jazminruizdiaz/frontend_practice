@@ -4,7 +4,7 @@ interface User {
   id: number;
   name: string;
 }
-const UserList = () => {
+const UserList: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 

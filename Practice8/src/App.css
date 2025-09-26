@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* App*/
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Color manager */
+.color-manager__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+}
+
+.color-manager__input {
+  padding: 10px;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid #ccc;
+}
+
+.color-manager__button:hover {
+  background-color: #45a049;
+}
+
+.color-manager__swatches {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+  width: 100%;
+}
+
+.color-manager__swatch {
+  width: 40px;
+  height: 40px;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
