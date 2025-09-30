@@ -1,0 +1,10 @@
+.no-result {
+  text-align: center;
+  padding: 2rem;
+}
+
+.no-result__text {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #666;
+}

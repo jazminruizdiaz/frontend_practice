@@ -1,0 +1,39 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.nav-bar__section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.nav-bar__section--search {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.nav-bar__section--study {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav-bar__progress {
+  width: 150px;
+}
+
+.nav-bar__search {
+  width: 100%;
+  max-width: 400px;
+}
+
+.nav-bar__button {
+  flex-shrink: 0;
+}

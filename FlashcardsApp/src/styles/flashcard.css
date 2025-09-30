@@ -1,0 +1,135 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.25rem;
+  transform-style: preserve-3d;
+  height: 200px;
+  width: 100%;
+  transition: 150ms;
+  cursor: pointer;
+  transform: rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  user-select: none;
+}
+
+.card--flip {
+  --rotate-y: 180deg;
+}
+
+.card__side {
+  position: absolute;
+  padding: 1rem;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.card__side--back {
+  transform: rotateY(180deg);
+}
+
+.card__header {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.card__actions {
+  display: flex;
+  gap: 0.2rem;
+}
+.card__action {
+  top: auto;
+  left: auto;
+  position: static;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 1rem;
+}
+
+.card__action:hover {
+  transform: scale(1.5);
+}
+
+.card__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+}
+
+.card__topic {
+  padding: 4px 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: lighter;
+  font-size: 0.75rem;
+  border-radius: 3px;
+}
+
+.card__learned {
+  font-weight: lighter;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.75rem;
+}
+
+.card__learned.learned {
+  background-color: rgba(51, 255, 88, 0.466);
+  color: white;
+}
+
+.card--math {
+  background-color: #afaacd;
+}
+
+.card--geography {
+  background-color: #f099d1;
+}
+
+.card--literature {
+  background-color: #cabf81;
+}
+
+.card--science {
+  background-color: #7aacbd;
+}
+
+.card--history {
+  background-color: #e4b593;
+}
+
+.card--physics {
+  background-color: #69547d;
+}
+
+.card--biology {
+  background-color: #82bc82;
+}
+
+.card--chemistry {
+  background-color: #c69a9a;
+}

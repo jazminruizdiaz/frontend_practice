@@ -1,0 +1,23 @@
+/* Progress Bar */
+.progress-bar__container {
+  min-width: 100px;
+}
+
+.progress-bar__stats {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progress-bar__graph {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar--fill {
+  height: 100%;
+  background-color: rgba(51, 255, 88, 0.466);
+  border-radius: 4px;
+}

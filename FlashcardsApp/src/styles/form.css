@@ -1,0 +1,44 @@
+.form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.form-page__container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-page__header {
+  margin-bottom: 2rem;
+}
+
+.form-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-page__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-page__label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-page__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}

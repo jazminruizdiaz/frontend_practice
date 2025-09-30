@@ -1,0 +1,30 @@
+.search {
+  width: 100%;
+}
+
+.search-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.search__field {
+  display: flex;
+  align-items: center;
+}
+
+.search__field--select {
+  min-width: 120px;
+}
+
+.search__field--input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.search__field--button {
+  flex-shrink: 0;
+}
