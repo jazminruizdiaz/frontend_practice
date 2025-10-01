@@ -11,6 +11,7 @@ function App() {
       <Route path="/books" element={<Books />} />
       <Route path="/books/:bookId" element={<BookDetail />} />
       <Route path="/not-found" element={<NotFound />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
