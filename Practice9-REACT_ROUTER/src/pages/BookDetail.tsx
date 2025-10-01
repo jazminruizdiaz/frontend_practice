@@ -1,15 +1,13 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { books } from "../data/books";
 
 export default function BookDetail() {
   const { bookId } = useParams();
-  const navigate = useNavigate();
 
   const book = books.find((b) => b.id === bookId);
 
   if (!book) {
-    navigate("/not-found", { replace: true });
-    return null;
+    return <Navigate to="/not-found" />;
   }
 
   return (
