@@ -1,0 +1,202 @@
+/*BASE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* APP */
+.app {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.app__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/*FORM*/
+.form {
+  border: 1px solid #ddd;
+  padding: 2rem;
+}
+
+.form__progress {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/*  FORM STEP */
+.form-step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-step__title {
+  margin-bottom: 1rem;
+}
+
+/*  FORM FIELD */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-field__label {
+  font-weight: bold;
+}
+
+.form-field__input,
+.form-field__select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-field__input:focus,
+.form-field__select:focus {
+  outline: 2px solid #000;
+}
+
+.form-field__error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+/* PERSONAL INFO STEP */
+.step--personal-info__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* ADDRESS STEP */
+.step--address__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/*PREFERENCES STEP*/
+.step--preferences__group {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.step--preferences__group legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+.step--preferences__option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.step--preferences__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.step--preferences__select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.step--preferences__error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.step--preferences__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* REVIEW STEP */
+.review {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.review__section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.review__section-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.review__item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.review__label {
+  font-weight: bold;
+  min-width: 120px;
+}
+
+.review__value {
+  flex: 1;
+}
+
+/*BUTTONS */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #000;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn--primary {
+  background: #000;
+  color: white;
+}
+
+.btn--back {
+  background: white;
+  color: #000;
+}
+
+.btn--success {
+  background: #000;
+  color: white;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-group .btn {
+  flex: 1;
+}
