@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*TOAST */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 280px;
+  max-width: 480px;
+  padding: 16px 20px 16px 16px;
+  border-radius: 8px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #575561;
+}
+
+.toast__message {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.toast__close {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  color: white;
+}
+
+.toast__close:hover {
+  color: rgb(202, 202, 202);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: left;
+  gap: 3rem;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(218, 217, 217);
+}
+
+.navbar__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/*BOTTON*/
+.btn {
+  padding: 15px 25px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.btn:hover {
+  background-color: rgb(100, 98, 98);
+}
+
+.btn--primary {
+  background-color: rgb(0, 0, 0);
+}
+
+.btn--secondary {
+  background-color: #535353;
+}
